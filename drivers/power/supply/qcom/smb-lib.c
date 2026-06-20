@@ -3760,10 +3760,10 @@ int smblib_get_prop_die_health(struct smb_charger *chg,
 #if defined(CONFIG_MACH_XIAOMI_WHYRED) || defined(CONFIG_MACH_XIAOMI_TULIP)
 #define HVDCP_CURRENT_UA		3300000
 #elif defined(CONFIG_MACH_MI)
-#define DCP_CURRENT_UA			1800000
-#define DCP_CURRENT_UA_2A		2000000
-#define HVDCP_CURRENT_UA		2750000
-#define HVDCP2_CURRENT_UA		1500000
+#define DCP_CURRENT_UA			3300000
+#define DCP_CURRENT_UA_2A		3300000
+#define HVDCP_CURRENT_UA		3300000
+#define HVDCP2_CURRENT_UA		3300000
 #else
 #define HVDCP_CURRENT_UA		3300000
 #endif
