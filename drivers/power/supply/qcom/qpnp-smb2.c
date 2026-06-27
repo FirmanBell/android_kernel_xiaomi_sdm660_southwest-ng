@@ -3284,7 +3284,7 @@ static int smb2_probe(struct platform_device *pdev)
 		usb_present, chg->real_charger_type,
 		batt_present, batt_health, batt_charge_type);
 #ifdef CONFIG_MACH_MI
-	queue_delayed_work(system_power_efficient_wq, &chg->reg_work, 60 * HZ);
+	schedule_delayed_work(&chg->reg_work, 60 * HZ);
 #endif
 	return rc;
 
